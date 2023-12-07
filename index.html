@@ -8,32 +8,44 @@
   <title>Portafolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" />
+    
+    <style>
+      /* Agregar media querys */
+      /* @media (min-width: 1269px) {
+        nav{
+          margin-left: 800px;
+        }
+      } */
+    </style>
 </head>
 
 <body>
   <header>
     <div class="container-fluid">
-      <nav class="navbar bg-body-tertiary fixed-top">
-        <div class="container-fluid">
+      <nav class="navbar bg-body-tertiary fixed-top" style="width: px;">
+        <div class="container">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Habilidades
+            <b>Habilidades</b>
           </a>
           <ul class="dropdown-menu">
             <li>
-              <a class="dropdown-item" href="#">Orientación al detalle</a>
+              <a class="dropdown-item" href="#"><i>Orientación al detalle</i></a>
             </li>
-            <li><a class="dropdown-item" href="#">Proactividad</a></li>
-            <li><a class="dropdown-item" href="#">Perseverancia</a></li>
+            <li><a class="dropdown-item" href="#"><i>Proactividad</i></a></li>
+            <li><a class="dropdown-item" href="#"><i>Perseverancia</i></a></li>
           </ul>
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Proyectos
+            <b>Proyectos</b>
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Baby Devs</a></li>
-            <li><a class="dropdown-item" href="#">Centro comunitario</a></li>
-            <li>
-              <a class="dropdown-item" href="#">*Aplicación de notas</a>
+            <li><a class="dropdown-item" href="https://github.com/BAteneacf/ProyectoIntegradorEquipo3"><i>Baby Devs</i></a>
             </li>
+            <li><a class="dropdown-item" href="https://github.com/LiaEliSan/CH33_CentroComunitario"><i>Centro
+              comunitario</i></a></li>
+            <!-- <li>
+              <a class="dropdown-item" href="#">*Aplicación de notas</a>
+            </li> -->
           </ul>
         </div>
       </nav>
@@ -41,52 +53,196 @@
   </header>
 
   <main>
-    <div id="presentacion">
+    <div class="texto1" id="presentacion">
       <h1 id="nombre"><b>Amalia Elizalde</b></h1>
       <h3 id="trabajo"><b>Desarrolladora Java FullStack Jr.</b></h3>
+      <span class="word" id="word"></span>
       <br />
     </div>
-    <div id="selfie">
-      <img id="foto" src="./src/Foto.jpg" alt="Selfie" width="25%" />
-    </div>
-    <div>
-      <div id="carrusel">
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./src/html.png" class="d-block w-50" alt="HTML" />
-            </div>
-            <div class="carousel-item">
-              <img src="./src/css.png" class="d-block w-50" alt="CSS" />
-            </div>
-            <div class="carousel-item">
-              <img src="./src/js.png" class="d-block w-50" alt="JS" />
+
+    <div class="row" id="contenedor">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div>
+          <div class="fotito" id="selfie">
+            <img id="foto" src="./src/foto.jpg" alt="Selfie" width="70%" />
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div>
+          <div>
+            <p id="textito">Soy alguien con gran habilidad para prestar atención a detalles y tomar la iniciativa para realizar acciones que anticipen situaciones inesperadas e inoportunas. <br/><br/> Estas son algunas de las herramientas con las que trabajo:</p>
+          </div>
+          <div class="grid-container" id="carrusel">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/"><img src="./src/java1.png" alt="Java" /></a>
+                  <!-- Nombre de herramienta -->
+                  <!-- <div class="carousel-caption d-none d-md-block">
+                    <h5>Java</h5>
+                  </div> -->
+                </div>
+                <div class="carousel-item">
+                  <a href="https://developer.mozilla.org/es/docs/Web/HTML"><img src="./src/html.png" alt="HTML" /></a>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://developer.mozilla.org/es/docs/Web/CSS"><img src="./src/css.png" alt="CSS" /></a>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://developer.mozilla.org/es/docs/Web/JavaScript"><img src="./src/js.png" alt="JS" /></a>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"><img src="./src/bootstrap.png" alt="Bootstrap" /></a>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://git-scm.com/doc"><img src="./src/git.png" alt="Git" /></a>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://dev.mysql.com/doc/refman/8.0/en/"><img src="./src/mysql.png" alt="MySQL" /></a>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Siguiente</span>
-          </button>
         </div>
       </div>
     </div>
 
-    <div>
-      <p id="algo"></p>
+    <!-- Otro Carrusel
+      <div class="grid-container">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./src/java1.png" class="d-block w-5" alt="Java" />
+          </div>
+          <div class="carousel-item">
+            <img src="./src/html.png" alt="HTML" />
+          </div>
+          <div class="carousel-item">
+            <img src="./src/css.png" alt="CSS" />
+          </div>
+          <div class="carousel-item">
+            <img src="./src/js.png" alt="JS" />
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div id="botoncito">
+      <p>
+        <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample"
+          aria-expanded="false" aria-controls="collapseWidthExample">
+          Holi, ¿te gustaría saber un poquito más?
+        </button>
+      </p>
+      <div style="min-height: 120px;" id="textitoBoton">
+        <div class="collapse collapse-horizontal" id="collapseWidthExample">
+          <div class="card card-body" style="width: 300px;">
+            Contáctame a través del siguiente formulario uwu
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- <div id="formulario">
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="correo@dominio.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Mensajito</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+    </div> -->
+
+    <!-- Formulario -->
+    <div class="p-4 container" id="form">
+      <h2 id="formNom">Formulario</h2>
+      <form action="" class="formulario" id="formulario">
+        <!-- Nombre -->
+        <div class="formulario__grupo" id="grupo__nombre">
+          <label for="nombre" class="formulario__label">Nombre</label>
+          <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre completo" required>
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">Este campo solo permite ingresar letras</p>
+        </div>
+        <!-- Correo electrónico -->
+        <div class="formulario__grupo" id="grupo__correo">
+          <label for="correo" class="formulario__label">Correo electrónico</label>
+          <div class="formulario__grupo-input">
+            <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@dominio.com"
+              required>
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">Caracteres permitidos: letras, números, puntos, guión y guión bajo</p>
+        </div>
+        <!-- Teléfono -->
+        <div class="formulario__grupo" id="grupo__telefono">
+          <label for="telefono" class="formulario__label">Teléfono</label>
+          <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="555 555 5555"
+              required>
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">Este campo solo permite ingresar 10 dígitos</p>
+        </div>
+        <!-- Mensajito -->
+        <div class="formulario__grupo" id="grupo__mensaje">
+          <label for="mensaje" class="formulario__label">Mensajito</label>
+          <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" name="mensaje" id="mensaje" placeholder="Escribe tu mensaje"
+              required>
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">Este campo solo permite ingresar letras</p>
+        </div>
+        <!-- Botón-->
+        <div class="formulario__grupo formulario__grupo-btn-enviar" id="boton">
+          <input type="submit" class="btn btn-success" id="button" value="Enviar">
+          <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">¡Formulario enviado exitosamente!</p>
+        </div>
+        <div id="alerts">
+        </div>
+      </form>
+    </div>
+
   </main>
 
-  <footer></footer>
+  <footer class="grid-container">
+    <div class="contacto" id="enlaces">
+      <a href="https://www.linkedin.com/in/amalia-eli/"><img class="linkedin" src="./src/linkedin1.png" alt="Ícono LinkedIn"></a>
+      <a href="https://github.com/LiaEliSan"><img class="github" src="./src/github-1.png" alt="Ícono GitHub"></a>
+      <a href="https://drive.google.com/file/d/17lm4YfP0ofT-iVBoCrCC1WEc7Go4x86w/view?usp=drive_link"><img class="cv" src="./src/cv-1.png" alt="Ícono CV"></a>
+      </div>
+  </footer>
 
+  <script src="./js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
+    <!-- <script src="js/alertsbootstrap.js"></script> -->
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+  <!-- envio de formilario -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("9VVYCZOUyMHhTOeeS");
+    })();
+  </script>
+
 </body>
 
 </html>
