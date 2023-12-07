@@ -8,19 +8,21 @@
   <title>Portafolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" />
-    
-    <style>
-      /* Agregar media querys */
-      /* @media (min-width: 1269px) {
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" /> -->
+  <style>
+    /* Agregar media querys */
+    /* @media (min-width: 1269px) {
         nav{
           margin-left: 800px;
         }
       } */
-    </style>
+  </style>
 </head>
 
+<!-- class="text-selection-disable" -->
+
 <body>
+<!-- <body onload="load();"> -->
   <header>
     <div class="container-fluid">
       <nav class="navbar bg-body-tertiary fixed-top" style="width: px;">
@@ -30,19 +32,20 @@
           </a>
           <ul class="dropdown-menu">
             <li>
-              <a class="dropdown-item" href="#"><i>Orientación al detalle</i></a>
+              <a class="dropdown-item" href="#Hab"><i>Orientación al detalle</i></a>
             </li>
-            <li><a class="dropdown-item" href="#"><i>Proactividad</i></a></li>
-            <li><a class="dropdown-item" href="#"><i>Perseverancia</i></a></li>
+            <li><a class="dropdown-item" href="#Hab"><i>Proactividad</i></a></li>
+            <li><a class="dropdown-item" href="#Hab"><i>Perseverancia</i></a></li>
           </ul>
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <b>Proyectos</b>
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="https://github.com/BAteneacf/ProyectoIntegradorEquipo3"><i>Baby Devs</i></a>
+            <li><a class="dropdown-item" href="#Proj"><i>Baby
+                  Devs</i></a>
             </li>
-            <li><a class="dropdown-item" href="https://github.com/LiaEliSan/CH33_CentroComunitario"><i>Centro
-              comunitario</i></a></li>
+            <li><a class="dropdown-item" href="#Proj"><i>Centro
+                  comunitario</i></a></li>
             <!-- <li>
               <a class="dropdown-item" href="#">*Aplicación de notas</a>
             </li> -->
@@ -59,47 +62,78 @@
       <span class="word" id="word"></span>
       <br />
     </div>
-
-    <div class="row" id="contenedor">
+    <div class="row grid-container" id="contenedor" style="padding: 60px;">
       <div class="col-sm-6 mb-3 mb-sm-0">
         <div>
           <div class="fotito" id="selfie">
-            <img id="foto" src="./src/foto.jpg" alt="Selfie" width="70%" />
+            <img id="foto" src="./src/foto.jpg" alt="Retrato" width=200px" />
           </div>
         </div>
       </div>
       <div class="col-sm-6">
         <div>
-          <div>
-            <p id="textito">Soy alguien con gran habilidad para prestar atención a detalles y tomar la iniciativa para realizar acciones que anticipen situaciones inesperadas e inoportunas. <br/><br/> Estas son algunas de las herramientas con las que trabajo:</p>
+          <div id="txtito">
+            <a href="javascript:txt(1)" style="text-decoration:none"><p id="textito" class="active">Puedo ayudarte en el análisis
+              de código e innovación gracias
+              a mi continuo interés en
+              actualizarme en el mundo TI. <br/><br/> Estas son algunas de
+              las herramientas con las que trabajo c:</p></a>
+            <a href="javascript:txtXD(2)" style="text-decoration:none"><p id="textitoXD" class="hide">Puedo ayudarte en el análisis
+              de código e innovación gracias a mi continuo interés en actualizarme en el mundo TI. <br/> <br/>Estas son algunas de las herramientas con las que necesito ayuda D:</p><a>
           </div>
           <div class="grid-container" id="carrusel">
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
+                <!-- <div class="card" style="width: 18rem;"> -->
                 <div class="carousel-item active">
-                  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/"><img src="./src/java1.png" alt="Java" /></a>
+                  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/"><img src="./src/java1.png"
+                      alt="Java" /></a>
                   <!-- Nombre de herramienta -->
                   <!-- <div class="carousel-caption d-none d-md-block">
-                    <h5>Java</h5>
-                  </div> -->
+                      <h5>Java</h5>
+                    </div> -->
+                  <div class="card-body">
+                    <p style="color: rgb(253, 102, 142);"><i>Java</i></p>
+                  </div>
                 </div>
+                <!-- </div> -->
                 <div class="carousel-item">
                   <a href="https://developer.mozilla.org/es/docs/Web/HTML"><img src="./src/html.png" alt="HTML" /></a>
+                  <div class="card-body">
+                    <p style="color: rgb(253, 102, 142);"><i>HTML</i></p>
+                  </div>
                 </div>
                 <div class="carousel-item">
                   <a href="https://developer.mozilla.org/es/docs/Web/CSS"><img src="./src/css.png" alt="CSS" /></a>
+                  <div class="card-body">
+                    <p style="color: rgb(253, 102, 142);"><i>CSS</i></p>
+                  </div>
                 </div>
                 <div class="carousel-item">
-                  <a href="https://developer.mozilla.org/es/docs/Web/JavaScript"><img src="./src/js.png" alt="JS" /></a>
+                  <a href="https://developer.mozilla.org/es/docs/Web/JavaScript"><img src="./src/js.png"
+                      alt="JavaScript" /></a>
+                  <div class="card-body">
+                    <p style="color: rgb(253, 102, 142);"><i>JavaScript</i></p>
+                  </div>
                 </div>
                 <div class="carousel-item">
-                  <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"><img src="./src/bootstrap.png" alt="Bootstrap" /></a>
+                  <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"><img
+                      src="./src/bootstrap.png" alt="Bootstrap" /></a>
+                  <div class="card-body">
+                    <p style="color: rgb(253, 102, 142);"><i>Bootstrap</i></p>
+                  </div>
                 </div>
                 <div class="carousel-item">
                   <a href="https://git-scm.com/doc"><img src="./src/git.png" alt="Git" /></a>
+                  <div class="card-body">
+                    <p style="color: rgb(253, 102, 142);"><i>Git</i></p>
+                  </div>
                 </div>
                 <div class="carousel-item">
                   <a href="https://dev.mysql.com/doc/refman/8.0/en/"><img src="./src/mysql.png" alt="MySQL" /></a>
+                  <div class="card-body">
+                    <p style="color: rgb(253, 102, 142);"><i>MySQL</i></p>
+                  </div>
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
@@ -137,6 +171,34 @@
         </div>
       </div>
     </div> -->
+    <div class="row grid-container" style="padding: 60px;">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div>
+          <a name="Hab"><h2  style="color: rgb(151, 77, 114);"><b>Habilidades</b></h2></a><br/>
+          <h4 style="text-decoration: none; color: hotpink;">Orientación al detalle</h4>
+          <p style="font-style: oblique; color: #c93584; text-align: justify;">Soy alguien con gran habilidad para prestar atención a detalles pequeñitos c:<br/></p>
+          <h4 style="text-decoration: none; color: hotpink;">Proactividad</h4>
+          <p style="font-style: oblique; color: #c93584; text-align: justify;">Soy alguien que toma la iniciativa para realizar acciones que anticipen situaciones inesperadas e inoportunas c:<br/></p>
+          <h4 style="text-decoration: none; color: hotpink;">Perseverancia</h4>
+          <p style="font-style: oblique; color: #c93584; text-align: justify;">Soy alguien que no se rinde y, que pese a las dificultades y circunstancias que se presenten, no dejo de intentarlo hasta alcanzar la meta deseada c:<br/></p>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div>
+          <a name="Proj"><h2  style="color: rgb(151, 77, 114);"><b>Proyectos</b></h2></a><br/>
+          <a href="https://github.com/BAteneacf/ProyectoIntegradorEquipo3" style="text-decoration: none; color: deeppink;">
+            <h4 class="enlace">BabyDevs</h4>
+          </a>
+          <p style="font-style: oblique; color: #c93584; text-align: justify;">Desarrollo de manera conjunta de sitio web para un ecommerce de asesorías educativas en el bootcamp de Generation México, utilizando los lenguajes de HTML, CSS, Javascript y Java, así como las herramientas GitHub,
+            Bootstrap, Figma, Spring Boot y MySQL. Para su
+            administración se empleo la metodología Agile Scrum c:<br/></p>
+          <a href="https://github.com/LiaEliSan/CH33_CentroComunitario" style="text-decoration: none; color: #ff1493;">
+            <h4 class="enlace">Centro comunitario</h4>
+          </a>
+          <p style="font-style: oblique; color: #c93584; text-align: justify;">Desarrollo de manera conjunta de sitio web para un centro comunitario en el bootcamp de Generation México, utilizando los lenguajes de HTML y CSS, así como las herramientas GitHub, Bootstrap y Canva c:<br/></p>
+        </div>
+      </div>
+    </div>
 
     <div id="botoncito">
       <p>
@@ -173,7 +235,8 @@
         <div class="formulario__grupo" id="grupo__nombre">
           <label for="nombre" class="formulario__label">Nombre</label>
           <div class="formulario__grupo-input">
-            <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre completo" required>
+            <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre completo"
+              required>
             <i class="formulario__validacion-estado fas fa-times-circle"></i>
           </div>
           <p class="formulario__input-error">Este campo solo permite ingresar letras</p>
@@ -222,18 +285,20 @@
 
   <footer class="grid-container">
     <div class="contacto" id="enlaces">
-      <a href="https://www.linkedin.com/in/amalia-eli/"><img class="linkedin" src="./src/linkedin1.png" alt="Ícono LinkedIn"></a>
-      <a href="https://github.com/LiaEliSan"><img class="github" src="./src/github-1.png" alt="Ícono GitHub"></a>
-      <a href="https://drive.google.com/file/d/17lm4YfP0ofT-iVBoCrCC1WEc7Go4x86w/view?usp=drive_link"><img class="cv" src="./src/cv-1.png" alt="Ícono CV"></a>
-      </div>
+      <a href="https://www.linkedin.com/in/amalia-eli/"><img class="linkedin" src="./src/linkedin1.png"
+          alt="Ícono LinkedIn" id="linkedin"></a>
+      <a href="https://github.com/LiaEliSan"><img class="github" src="./src/github-1.png" alt="Ícono GitHub" id="github"></a>
+      <a href="https://drive.google.com/file/d/17lm4YfP0ofT-iVBoCrCC1WEc7Go4x86w/view?usp=drive_link"><img class="cv"
+          src="./src/cv-1.png" alt="Ícono CV" id="cv"></a>
+    </div>
   </footer>
 
   <script src="./js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
-    <!-- <script src="js/alertsbootstrap.js"></script> -->
-	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+  <!-- <script src="js/alertsbootstrap.js"></script> -->
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
   <!-- envio de formilario -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
   </script>

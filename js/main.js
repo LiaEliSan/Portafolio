@@ -1,6 +1,4 @@
-// const collapseElementList = document.querySelectorAll('.collapse')
-// const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl))
-
+// Letritas que aparecen y desaparecen
 let words = ['Frontend', 'Backend'],
     wordWrapper = document.getElementById('word'),
     wordWrapperContent = wordWrapper.innerHTML,
@@ -29,6 +27,7 @@ setInterval(function(){
   } // if
 }, 150);
 
+// Movimiento de la fotito
 const element = document.querySelector(".fotito");
 const keyframes = [
     { transform: "translate(0, 0)", offset: 0 },
@@ -44,7 +43,49 @@ const options = {
 };
 const animation = element.animate(keyframes, options);
 
-// formulario
+// Cambio de textito
+// OPC 4
+// let nun = document.getElementById(textito);
+// let unu = document.getElementById(textitoXD);
+// function modiftxt() {
+//   nun.firstChild.nodeValue = unu;
+// } // modiftxt
+// function load() {
+//   nun.addEventListener("click", modiftxt, false);
+// } // load
+// document.addEventListener("DOMContentLoaded", load, false);
+
+// OPC 3
+// $('a').click(function() {
+//   $(this).toggleClass("active");
+//   $('p').toggleClass("hide");
+//   if ( $(this).hasClass( "active" ) ) {
+//     $(this).text( "Puedo ayudarte en el análisis de código e innovación gracias a mi continuo interés en actualizarme en el mundo TI. <br/> <br/>Estas son algunas de las herramientas con las que necesito ayuda D:" );
+//   } else {
+//     $(this).text( "Puedo ayudarte en el análisis de código e innovación gracias a mi continuo interés en actualizarme en el mundo TI. <br/><br/> Estas son algunas de las herramientas con las que trabajo c:" );
+//   }
+// });
+// OPC 2
+// let clic = new Array();
+// txt[1] = getElementById('textito');
+// txtXD[2] = getElementById('textitoXD');
+// function CambioTexto(id){
+// document.getElementById("txtito").innerHTML = arrMensaje[id];
+// }
+// OPC 1
+// let clic = document.getElementsById('textito');
+// for (var i = 0; i < links.length; i++) {
+//     clic[i].addEventListener('click',cambiaLink);
+// }
+// function cambiaClic(){
+//   if(!this.classList.contains("textitoXD")){
+//     this.classList.add("textitoXD");
+//   }else{
+//     this.classList.remove("textitoXD");
+//   }
+// }
+
+// Formulario
 const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
 const expresiones = {

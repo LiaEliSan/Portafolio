@@ -72,7 +72,8 @@ main{
 }
 #selfie{
     margin: auto;
-    padding-left: 75px;
+    /* padding-left: 75px; */
+    /* padding-left: 100px; */
     /* padding-top: 30px; */
 }
 #contenedor{
@@ -90,26 +91,54 @@ main{
     /* padding-top: 60px; */
     /* padding-bottom: 20px; */
     text-align: justify;
+    /* text-align: center; */
     font-size: 20px;
     color: #cc6e6e;
+    &:hover, &:focus{
+        cursor: pointer;
+        opacity: .7;
+    }
 }
-#carrusel{
+#textitoXD{
+    /* padding: 25px; */
+    /* padding-left: 50px; */
+    padding-right: 40px;
+    /* padding-top: 60px; */
+    /* padding-bottom: 20px; */
+    text-align: justify;
+    /* text-align: center; */
+    font-size: 20px;
+    color: #6ea8cc;
+}
+.active{
+    color: #6ea8cc;
+}
+.hide{
+    display: none;
+}
+/* #carrusel{ */
     /* padding: 50px; */
     /* padding-top: 35;
     padding-bottom: 35px;
     padding-left: 45px;
     padding-right: 45px; */
+/* } */
+.enlace{
+    &:hover, &:focus{
+        cursor: pointer;
+        opacity: .7;
+    }
 }
 #botoncito{
     display: flex;
     justify-content: center;
-    padding-top: 25px;
+    /* padding-top: 25px; */
     text-align: center;
 }
 #formulario{
     padding-left: 40px;
     padding-right: 40px;
-    padding-bottom: 40px;
+    /* padding-bottom: 40px; */
 }
 .grid-container > *{
     text-align: center;
@@ -223,6 +252,10 @@ main{
     height: 40px;
 	background-color: rgb(238, 176, 176);
 	/* box-shadow: 5px 5px 0px 0px black; */
+    &:hover, &:focus{
+        cursor: pointer;
+        opacity: .7;
+    }
 }
 .formulario__btn:hover {
 	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
@@ -273,4 +306,22 @@ footer{
     padding: 40px;
     padding-inline: 20px;
     align-items: center;
+}
+#linkedin{
+    transition: transform .2s;
+}
+#linkedin:hover{
+    transform: scale(1.2);
+}
+#github{
+    transition: transform .2s;
+}
+#github:hover{
+    transform: scale(1.2);
+}
+#cv{
+    transition: transform .2s;
+}
+#cv:hover{
+    transform: scale(1.2);
 }
